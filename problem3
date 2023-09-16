@@ -1,0 +1,45 @@
+''' Problem 3:  Biggest and smallest number in an array
+ Write a program to print the biggest and smallest number in the array. 
+
+Input: arr[] = {1, 2, 3, 4, 5}
+Output: Maximum is: 5
+Minimum is: 1
+
+Input: arr[] = {5, 3, 7, 4, 2}
+Output: Maximum is: 7
+Minimum is: 2
+
+'''
+
+# creating an empty list
+numbers = []
+
+while True:
+    try:
+        userinput = int(input("Enter the size of the array : "))
+        break
+    except ValueError:
+        print("Please input a number.")
+# number of elements as input
+
+count = 0
+# iterating till the range
+for i in range(0, userinput):
+    count += 1
+    print("enter number",count,": ",end=" ")
+    ele = int(input())
+    # adding the element
+    numbers.append(ele) 
+
+print(numbers)
+
+#sorting the list
+numbers.sort()
+
+# biggest number
+print("largest number is: ", numbers[-1])
+
+# smallest number
+print("smallest number is: ", numbers[0])
+
+

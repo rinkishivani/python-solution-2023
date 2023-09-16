@@ -1,0 +1,26 @@
+'''
+Problem 1: Program to count occurrences of a given character in a string.
+
+ (b) Count character '3' in the below string.
+	Input "abccdefgaa."
+	Output : 3
+'''
+
+'''
+Note: I'm suspecting that the question parameters maybe incorrect as the output given is '3' or vise versa. According to the question output will be zero. 
+'''
+# take user input (considered captital and small both)
+userinput = input("Enter a word to count the number of '3' \n")
+
+# initial value for count variable
+count = 0
+
+# counter loop for 
+for c in userinput:
+    # print(c)
+    if c == "3":
+        count += 1
+    
+print("word:", userinput)
+print("'3' count:", count)
+	

@@ -1,0 +1,23 @@
+'''
+Problem 1: Program to count occurrences of a given character in a string.
+
+ (a) Count character 'e' in the below string.
+	Input "geeksforgeeks". 
+	Output: 4
+'''
+
+# take user input (considered captital and small both)
+userinput = input("Enter a word to count the number of 'e' \n").lower()
+
+# initial value for count variable
+count = 0
+
+# counter loop for 
+for c in userinput:
+    # print(c)
+    if c == "e":
+        count += 1
+    
+print("word:", userinput)
+print("e count:", count)
+	

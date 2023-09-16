@@ -1,0 +1,41 @@
+''' 
+Problem 4:  Swap two Strings Without Using any Third Variable
+ Input: a = "Hello", b = "World".
+Output: Strings after swap: a = World and b = Hello
+
+'''
+
+userinputa = userinputb = ''
+
+# take user input for both the words
+while True:
+    userinputa = input("Enter a first word: ")
+
+    if not userinputa.isalpha():
+        print('Enter only letters')
+        continue
+    else:
+        print(userinputa)
+        break
+
+while True:
+    userinputb = input("Enter a second word: ")
+
+    if not userinputb.isalpha():
+        print('Enter only letters')
+        continue
+    else:
+        print(userinputb)
+        break
+
+#initial value 
+print("Before Swapping")
+print("user input a: ", userinputa, " user input b: ", userinputb,"\n")
+
+#swapping values
+userinputa, userinputb = userinputb, userinputa
+
+#value  after swapping
+print("After Swapping")
+print("user input a: ", userinputa, " user input b: ", userinputb)
+
